@@ -1,0 +1,58 @@
+<div class="container-fluid">
+<!-- xs sm md lg  -->
+<!-- Contact Deatails -->
+<div class="row no-gutters">
+<div class=" d-none d-md-block d-lg-block d-xl-block col-md-1 col-md-1">
+</div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 boarder ">
+   <a href="#">
+   <img class = "logo center-align " src="{{companyDetails.companyNameImage}}" /> </a>
+</div>
+<div class="d-none d-md-block d-lg-block d-xl-block col-md-2 col-lg-2 col-xl-2 center-align ">
+   <a href= "mailto:{{companyDetails.companyEmail}}" >
+      <ul>
+         <li class="Head"><span class="glyphicon glyphicon-envelope"></span> Drop us a line</li>
+         <li class="value">{{companyDetails.companyEmail}}</li>
+      </ul>
+   </a>
+</div>
+<div class="d-none d-md-block d-lg-block d-xl-block  center-align  col-md-2 col-lg-2 col-xl-2">
+   <a href="tel:{{companyDetails.companyPhone}}" >
+      <ul>
+         <li class="Head"><span class="glyphicon glyphicon-earphone"></span> Give us a call</li>
+         <li class="value">{{companyDetails.companyPhone}}</li>
+      </ul>
+   </a>
+</div>
+<div class="d-none d-md-block d-lg-block d-xl-block  center-align  col-md-2 col-lg-2 col-xl-2">
+   <a href="{{companyDetails.companyGoogleMapPin}}" target="_blank">
+      <ul>
+         <li class="Head"><span class= "glyphicon glyphicon-map-marker"></span>Address</li>
+         <li class="AddressValue">{{companyDetails.companyAddress}}</li>
+      </ul>
+   </a>
+</div>
+<!--enter-align-->
+<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 ">
+   <div class= "row"> 
+      <a href="tel:{{companyDetails.companyPhone}}" data-toggle="tooltip" data-placement="top" title="Give us a call" class="phone"><i class= " d-md-none d-lg-none glyphicon glyphicon-earphone "> </i></a>
+      <a href= "mailto:{{companyDetails.companyEmail}}" data-toggle="tooltip" data-placement="top" title="Drop us a line"  class = "mail"><i class= " d-md-none d-lg-none  glyphicon glyphicon-envelope  "> </i></a>
+      <a href="{{companyDetails.companyGoogleMapPin}}" data-toggle="tooltip" data-placement="top" title="Let's meet here"  target="_blank" class="marker"><i class= " d-md-none d-lg-none glyphicon glyphicon-map-marker "></i></a>
+      <button type="button" class="btn btn-primary btn-sm " data-toggle="modal" data-target="#exampleModalCenter">
+      <button type="button" class="btn btn-primary btn-sm" (click)="openModal(template)"> Get A Quotation</button>
+      </button>
+   </div>
+   <!-- Menu -->
+   <!-- Modal -->
+   <ng-template #template>
+      <div class="modal-header">
+         <h4 class="modal-title pull-left">Qutation Form</h4>
+         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+         <span aria-hidden="true">&times;</span>
+         </button>
+      </div>
+      <div class="modal-body">
+         This is a modal.
+      </div>
+   </ng-template>
+</div>

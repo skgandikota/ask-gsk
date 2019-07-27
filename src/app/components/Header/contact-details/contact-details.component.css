@@ -1,0 +1,100 @@
+* {
+	margin-right: 0px;
+	margin-left: 0px;
+  margin-top: 0.5%;
+}
+
+a{
+  cursor:pointer;
+  text-decoration: none;
+   color: inherit;
+}
+
+/*  Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .center-align{
+    align-content: center;
+    text-align: center; 
+    padding-top: 3%;
+  }
+}
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {}
+/*  Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {}
+/*  Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {}
+
+.siteTitle {
+	font-weight: 900;
+	font-size: xx-large;
+	font-variant-caps: all-petite-caps;
+}
+
+.logo {
+	
+	width: 90%;
+	filter: brightness(1);
+}
+
+ul {
+	margin-left: 3%;
+	list-style: none;
+	padding: 0px;
+}
+
+
+.Head{
+    font-family: 'Open Sans', sans-serif;
+    font-variant: all-small-caps;
+    font-size: smaller;
+    font-weight: bolder;
+    color: darkblue;
+}
+
+
+.value{
+  font-family: 'Open Sans', sans-serif;
+  font-size: small;
+}
+
+
+.AddressValue{
+  font-family: 'Open Sans', sans-serif;
+    font-variant-caps: all-petite-caps;
+    font-size: small;
+}
+
+.phone{
+     font-size: 170%;
+    margin: auto;
+    color:darkslategray;
+}
+
+.glyphicon:hover{
+  -webkit-stroke-width: 3px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 2px 0px 20px  blue;
+}
+
+.mail{
+     font-size: 170%;
+    margin: auto;
+    color:darkslategray;
+    
+}
+
+.marker{
+    font-size: 170%;
+    margin: auto;
+    color:darkslategray;
+}
+
+.quotation{
+  margin: auto;
+}
+
+
+
+
