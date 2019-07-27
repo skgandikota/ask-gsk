@@ -6,5 +6,5 @@ import sdk from '@stackblitz/sdk';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-isShown:boolean=false;
+
 }
