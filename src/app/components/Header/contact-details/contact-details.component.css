@@ -17,7 +17,12 @@ a{
     align-content: center;
     text-align: center; 
     padding-top: 3%;
+    
   }
+.logo {
+width: 79% !important; 
+filter: brightness(1)!important; 
+}
 }
 /* Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) {}
@@ -33,7 +38,7 @@ a{
 }
 
 .logo {
-	
+
 	width: 90%;
 	filter: brightness(1);
 }
